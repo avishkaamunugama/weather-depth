@@ -9,9 +9,9 @@ Estimating the depth from a single RGB image is a challenging task that finds ap
 
 ### MacOS Application UI
 <p align="center">
-  <img src="https://github.com/avishkaamunugama/WEATHERDEPTH/blob/7f14aaec2404845559276315cdbf19368b679d56/Images/ScreenShot_1.png" height="250"> <img src="https://github.com/avishkaamunugama/WEATHERDEPTH/blob/7f14aaec2404845559276315cdbf19368b679d56/Images/ScreenShot_2.png" height="250">
-  <img src="https://github.com/avishkaamunugama/WEATHERDEPTH/blob/7f14aaec2404845559276315cdbf19368b679d56/Images/ScreenShot_3.png" height="500">
-  <img src="https://github.com/avishkaamunugama/WEATHERDEPTH/blob/7f14aaec2404845559276315cdbf19368b679d56/Images/ScreenShot_4.png" height="500">
+  <img src="https://github.com/avishkaamunugama/WEATHERDEPTH/blob/7f14aaec2404845559276315cdbf19368b679d56/Images/ScreenShot_1.png" height="225">  <img src="https://github.com/avishkaamunugama/WEATHERDEPTH/blob/7f14aaec2404845559276315cdbf19368b679d56/Images/ScreenShot_2.png" height="225">
+  <img src="https://github.com/avishkaamunugama/WEATHERDEPTH/blob/7f14aaec2404845559276315cdbf19368b679d56/Images/ScreenShot_3.png" height="440">
+  <img src="https://github.com/avishkaamunugama/WEATHERDEPTH/blob/7f14aaec2404845559276315cdbf19368b679d56/Images/ScreenShot_4.png" height="440">
 </p>
 
 ### ***Source code of the project will be released soon.
