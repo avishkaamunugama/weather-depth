@@ -4,9 +4,6 @@ Estimating the depth from a single RGB image is a challenging task that finds ap
 
 ### Proposed Architecture
 
-<p align="center">
-  <img src="https://github.com/avishkaamunugama/WEATHERDEPTH/blob/1d3649b6f4bef526069932838b6b0be225754ea6/Images/ScreenShot_5.png" height="300">
-</p>
 
 ### MacOS Application UI
 <p align="center">
