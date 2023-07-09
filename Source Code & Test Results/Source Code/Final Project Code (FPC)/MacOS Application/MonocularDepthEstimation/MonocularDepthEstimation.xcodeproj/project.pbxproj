@@ -1,0 +1,510 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		EF4715DE285E02520026A24C /* SideMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF4715DD285E02520026A24C /* SideMenuViewController.swift */; };
+		EF4715E1285E10660026A24C /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF4715DF285E10660026A24C /* DetailViewController.swift */; };
+		EF52CA6D28518CF4003F3063 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF52CA6C28518CF4003F3063 /* AppDelegate.swift */; };
+		EF52CA6F28518CF4003F3063 /* EstimateDepthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF52CA6E28518CF4003F3063 /* EstimateDepthViewController.swift */; };
+		EF52CA7128518CF6003F3063 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EF52CA7028518CF6003F3063 /* Assets.xcassets */; };
+		EF52CA7428518CF6003F3063 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EF52CA7228518CF6003F3063 /* Main.storyboard */; };
+		EF52CA9A28519102003F3063 /* DragNDropImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF52CA9928519102003F3063 /* DragNDropImageView.swift */; };
+		EF79D7A6285563CD00CA1816 /* opencv2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EF79D7A5285563CD00CA1816 /* opencv2.framework */; };
+		EF79D7B22855648100CA1816 /* OpenCVWrapper.mm in Sources */ = {isa = PBXBuildFile; fileRef = EF79D7B12855648100CA1816 /* OpenCVWrapper.mm */; };
+		EF79D7B528556BD000CA1816 /* OpenCL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EF79D7B428556BD000CA1816 /* OpenCL.framework */; };
+		EF79D7BA28559E0D00CA1816 /* Accelerate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EF79D7B928559E0D00CA1816 /* Accelerate.framework */; };
+		EF87258F286AF4F1006433C1 /* ThemeManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF87258E286AF4F0006433C1 /* ThemeManager.swift */; };
+		EFA039C0286B683F00B0862F /* ScreenTypeHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFA039BF286B683F00B0862F /* ScreenTypeHelper.swift */; };
+		EFB721E9286A9E3B00D97CFC /* SplitViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFB721E8286A9E3B00D97CFC /* SplitViewController.swift */; };
+		EFB721EB286AB9FF00D97CFC /* CustomAlertHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFB721EA286AB9FF00D97CFC /* CustomAlertHelper.swift */; };
+		EFCE23D2286B897C00D2C472 /* WeatherDepth.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = EFCE23D1286B897C00D2C472 /* WeatherDepth.mlmodel */; };
+		EFE93E3F28669AD1004C6959 /* PythonKit in Frameworks */ = {isa = PBXBuildFile; productRef = EFE93E3E28669AD1004C6959 /* PythonKit */; };
+		EFE93E4128669F24004C6959 /* 3DPointCloud.py in Resources */ = {isa = PBXBuildFile; fileRef = EFE93E4028669F24004C6959 /* 3DPointCloud.py */; };
+		EFEB7F4528590B74007AFBF9 /* Math.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFEB7F4328590B74007AFBF9 /* Math.swift */; };
+		EFEB7F4628590B74007AFBF9 /* MLMultiArray+Image.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFEB7F4428590B74007AFBF9 /* MLMultiArray+Image.swift */; };
+		EFEB7F4A28590C1F007AFBF9 /* CGImage+RawBytes.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFEB7F4928590C1F007AFBF9 /* CGImage+RawBytes.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		EF4715DD285E02520026A24C /* SideMenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideMenuViewController.swift; sourceTree = "<group>"; };
+		EF4715DF285E10660026A24C /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		EF52CA6928518CF4003F3063 /* WeatherDepth.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WeatherDepth.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		EF52CA6C28518CF4003F3063 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		EF52CA6E28518CF4003F3063 /* EstimateDepthViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EstimateDepthViewController.swift; sourceTree = "<group>"; };
+		EF52CA7028518CF6003F3063 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		EF52CA7328518CF6003F3063 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		EF52CA7528518CF6003F3063 /* MonocularDepthEstimation.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = MonocularDepthEstimation.entitlements; sourceTree = "<group>"; };
+		EF52CA9928519102003F3063 /* DragNDropImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DragNDropImageView.swift; sourceTree = "<group>"; };
+		EF52CA9C2851A47E003F3063 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		EF79D7A5285563CD00CA1816 /* opencv2.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = opencv2.framework; sourceTree = "<group>"; };
+		EF79D7AF2855648100CA1816 /* MonocularDepthEstimation-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MonocularDepthEstimation-Bridging-Header.h"; sourceTree = "<group>"; };
+		EF79D7B02855648100CA1816 /* OpenCVWrapper.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OpenCVWrapper.h; sourceTree = "<group>"; };
+		EF79D7B12855648100CA1816 /* OpenCVWrapper.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = OpenCVWrapper.mm; sourceTree = "<group>"; };
+		EF79D7B32855650A00CA1816 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		EF79D7B428556BD000CA1816 /* OpenCL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenCL.framework; path = System/Library/Frameworks/OpenCL.framework; sourceTree = SDKROOT; };
+		EF79D7B928559E0D00CA1816 /* Accelerate.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accelerate.framework; path = System/Library/Frameworks/Accelerate.framework; sourceTree = SDKROOT; };
+		EF87258E286AF4F0006433C1 /* ThemeManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThemeManager.swift; sourceTree = "<group>"; };
+		EFA039BF286B683F00B0862F /* ScreenTypeHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScreenTypeHelper.swift; sourceTree = "<group>"; };
+		EFB721E8286A9E3B00D97CFC /* SplitViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplitViewController.swift; sourceTree = "<group>"; };
+		EFB721EA286AB9FF00D97CFC /* CustomAlertHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomAlertHelper.swift; sourceTree = "<group>"; };
+		EFCE23D1286B897C00D2C472 /* WeatherDepth.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = WeatherDepth.mlmodel; sourceTree = "<group>"; };
+		EFE93E4028669F24004C6959 /* 3DPointCloud.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = 3DPointCloud.py; sourceTree = "<group>"; };
+		EFEB7F4328590B74007AFBF9 /* Math.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Math.swift; sourceTree = "<group>"; };
+		EFEB7F4428590B74007AFBF9 /* MLMultiArray+Image.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "MLMultiArray+Image.swift"; sourceTree = "<group>"; };
+		EFEB7F4928590C1F007AFBF9 /* CGImage+RawBytes.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CGImage+RawBytes.swift"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		EF52CA6628518CF4003F3063 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EF79D7BA28559E0D00CA1816 /* Accelerate.framework in Frameworks */,
+				EF79D7B528556BD000CA1816 /* OpenCL.framework in Frameworks */,
+				EF79D7A6285563CD00CA1816 /* opencv2.framework in Frameworks */,
+				EFE93E3F28669AD1004C6959 /* PythonKit in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		EF52CA6028518CF4003F3063 = {
+			isa = PBXGroup;
+			children = (
+				EF79D7A4285563CD00CA1816 /* Frameworks */,
+				EF52CA6B28518CF4003F3063 /* MonocularDepthEstimation */,
+				EF52CA6A28518CF4003F3063 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		EF52CA6A28518CF4003F3063 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				EF52CA6928518CF4003F3063 /* WeatherDepth.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		EF52CA6B28518CF4003F3063 /* MonocularDepthEstimation */ = {
+			isa = PBXGroup;
+			children = (
+				EF52CA9C2851A47E003F3063 /* Info.plist */,
+				EF52CA6C28518CF4003F3063 /* AppDelegate.swift */,
+				EF4715DD285E02520026A24C /* SideMenuViewController.swift */,
+				EF4715DF285E10660026A24C /* DetailViewController.swift */,
+				EF52CA6E28518CF4003F3063 /* EstimateDepthViewController.swift */,
+				EFB721E8286A9E3B00D97CFC /* SplitViewController.swift */,
+				EF52CA7028518CF6003F3063 /* Assets.xcassets */,
+				EF52CA7228518CF6003F3063 /* Main.storyboard */,
+				EF52CA7528518CF6003F3063 /* MonocularDepthEstimation.entitlements */,
+				EF52CA7B28518FBC003F3063 /* Model */,
+				EF52CA9B28519108003F3063 /* CustomComponents */,
+				EFEB7F3C2858DCFC007AFBF9 /* Helper */,
+				EFEB7F392858D794007AFBF9 /* OpenCV */,
+			);
+			path = MonocularDepthEstimation;
+			sourceTree = "<group>";
+		};
+		EF52CA7B28518FBC003F3063 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				EFCE23D1286B897C00D2C472 /* WeatherDepth.mlmodel */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		EF52CA9B28519108003F3063 /* CustomComponents */ = {
+			isa = PBXGroup;
+			children = (
+				EFE93E4028669F24004C6959 /* 3DPointCloud.py */,
+				EF52CA9928519102003F3063 /* DragNDropImageView.swift */,
+			);
+			path = CustomComponents;
+			sourceTree = "<group>";
+		};
+		EF79D7A4285563CD00CA1816 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				EF79D7B928559E0D00CA1816 /* Accelerate.framework */,
+				EF79D7B428556BD000CA1816 /* OpenCL.framework */,
+				EF79D7A5285563CD00CA1816 /* opencv2.framework */,
+			);
+			name = Frameworks;
+			path = MonocularDepthEstimation/Frameworks;
+			sourceTree = "<group>";
+		};
+		EFEB7F392858D794007AFBF9 /* OpenCV */ = {
+			isa = PBXGroup;
+			children = (
+				EF79D7B02855648100CA1816 /* OpenCVWrapper.h */,
+				EF79D7B12855648100CA1816 /* OpenCVWrapper.mm */,
+				EF79D7AF2855648100CA1816 /* MonocularDepthEstimation-Bridging-Header.h */,
+				EF79D7B32855650A00CA1816 /* PrefixHeader.pch */,
+			);
+			path = OpenCV;
+			sourceTree = "<group>";
+		};
+		EFEB7F3C2858DCFC007AFBF9 /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				EFA039BF286B683F00B0862F /* ScreenTypeHelper.swift */,
+				EFB721EA286AB9FF00D97CFC /* CustomAlertHelper.swift */,
+				EF87258E286AF4F0006433C1 /* ThemeManager.swift */,
+				EFEB7F4328590B74007AFBF9 /* Math.swift */,
+				EFEB7F4428590B74007AFBF9 /* MLMultiArray+Image.swift */,
+				EFEB7F4928590C1F007AFBF9 /* CGImage+RawBytes.swift */,
+			);
+			path = Helper;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		EF52CA6828518CF4003F3063 /* WeatherDepth */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EF52CA7828518CF6003F3063 /* Build configuration list for PBXNativeTarget "WeatherDepth" */;
+			buildPhases = (
+				EF52CA6528518CF4003F3063 /* Sources */,
+				EF52CA6628518CF4003F3063 /* Frameworks */,
+				EF52CA6728518CF4003F3063 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = WeatherDepth;
+			packageProductDependencies = (
+				EFE93E3E28669AD1004C6959 /* PythonKit */,
+			);
+			productName = MonocularDepthEstimation;
+			productReference = EF52CA6928518CF4003F3063 /* WeatherDepth.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		EF52CA6128518CF4003F3063 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1330;
+				LastUpgradeCheck = 1340;
+				TargetAttributes = {
+					EF52CA6828518CF4003F3063 = {
+						CreatedOnToolsVersion = 13.3.1;
+						LastSwiftMigration = 1330;
+					};
+				};
+			};
+			buildConfigurationList = EF52CA6428518CF4003F3063 /* Build configuration list for PBXProject "MonocularDepthEstimation" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = EF52CA6028518CF4003F3063;
+			packageReferences = (
+				EFE93E3D28669AD1004C6959 /* XCRemoteSwiftPackageReference "PythonKit" */,
+			);
+			productRefGroup = EF52CA6A28518CF4003F3063 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				EF52CA6828518CF4003F3063 /* WeatherDepth */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		EF52CA6728518CF4003F3063 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EF52CA7128518CF6003F3063 /* Assets.xcassets in Resources */,
+				EF52CA7428518CF6003F3063 /* Main.storyboard in Resources */,
+				EFE93E4128669F24004C6959 /* 3DPointCloud.py in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		EF52CA6528518CF4003F3063 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EF52CA6F28518CF4003F3063 /* EstimateDepthViewController.swift in Sources */,
+				EFB721EB286AB9FF00D97CFC /* CustomAlertHelper.swift in Sources */,
+				EF79D7B22855648100CA1816 /* OpenCVWrapper.mm in Sources */,
+				EFB721E9286A9E3B00D97CFC /* SplitViewController.swift in Sources */,
+				EFEB7F4528590B74007AFBF9 /* Math.swift in Sources */,
+				EFEB7F4628590B74007AFBF9 /* MLMultiArray+Image.swift in Sources */,
+				EF87258F286AF4F1006433C1 /* ThemeManager.swift in Sources */,
+				EFCE23D2286B897C00D2C472 /* WeatherDepth.mlmodel in Sources */,
+				EFEB7F4A28590C1F007AFBF9 /* CGImage+RawBytes.swift in Sources */,
+				EF52CA9A28519102003F3063 /* DragNDropImageView.swift in Sources */,
+				EF4715E1285E10660026A24C /* DetailViewController.swift in Sources */,
+				EFA039C0286B683F00B0862F /* ScreenTypeHelper.swift in Sources */,
+				EF4715DE285E02520026A24C /* SideMenuViewController.swift in Sources */,
+				EF52CA6D28518CF4003F3063 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		EF52CA7228518CF6003F3063 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EF52CA7328518CF6003F3063 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		EF52CA7628518CF6003F3063 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 12.3;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		EF52CA7728518CF6003F3063 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 12.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		EF52CA7928518CF6003F3063 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = NO;
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = NO;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = NO;
+				CODE_SIGN_ENTITLEMENTS = MonocularDepthEstimation/MonocularDepthEstimation.entitlements;
+				CODE_SIGN_IDENTITY = "-";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = LM64UBFV4U;
+				ENABLE_HARDENED_RUNTIME = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/MonocularDepthEstimation/Frameworks",
+				);
+				GCC_PREFIX_HEADER = "${SRCROOT}/MonocularDepthEstimation/OpenCV/PrefixHeader.pch";
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = MonocularDepthEstimation/Info.plist;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INFOPLIST_KEY_NSMainStoryboardFile = Main;
+				INFOPLIST_KEY_NSPrincipalClass = NSApplication;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.avishka.WeatherDepth;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "MonocularDepthEstimation/OpenCV/MonocularDepthEstimation-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		EF52CA7A28518CF6003F3063 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = NO;
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = NO;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = NO;
+				CODE_SIGN_ENTITLEMENTS = MonocularDepthEstimation/MonocularDepthEstimation.entitlements;
+				CODE_SIGN_IDENTITY = "-";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = LM64UBFV4U;
+				ENABLE_HARDENED_RUNTIME = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/MonocularDepthEstimation/Frameworks",
+				);
+				GCC_PREFIX_HEADER = "${SRCROOT}/MonocularDepthEstimation/OpenCV/PrefixHeader.pch";
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = MonocularDepthEstimation/Info.plist;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INFOPLIST_KEY_NSMainStoryboardFile = Main;
+				INFOPLIST_KEY_NSPrincipalClass = NSApplication;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.avishka.WeatherDepth;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "MonocularDepthEstimation/OpenCV/MonocularDepthEstimation-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		EF52CA6428518CF4003F3063 /* Build configuration list for PBXProject "MonocularDepthEstimation" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EF52CA7628518CF6003F3063 /* Debug */,
+				EF52CA7728518CF6003F3063 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EF52CA7828518CF6003F3063 /* Build configuration list for PBXNativeTarget "WeatherDepth" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EF52CA7928518CF6003F3063 /* Debug */,
+				EF52CA7A28518CF6003F3063 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		EFE93E3D28669AD1004C6959 /* XCRemoteSwiftPackageReference "PythonKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/pvieito/PythonKit.git";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		EFE93E3E28669AD1004C6959 /* PythonKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = EFE93E3D28669AD1004C6959 /* XCRemoteSwiftPackageReference "PythonKit" */;
+			productName = PythonKit;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = EF52CA6128518CF4003F3063 /* Project object */;
+}

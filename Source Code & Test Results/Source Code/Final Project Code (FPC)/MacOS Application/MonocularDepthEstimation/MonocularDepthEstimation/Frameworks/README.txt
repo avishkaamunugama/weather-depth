@@ -1,0 +1,2 @@
+Please extract the `Final Project Code (FPC).zip` from https://drive.google.com/file/d/1EWnobSWZ2t9l52saB35jRNYGnzxH8meR/view?usp=sharing to access the complete project source code. 
+Libraries and ML model was removed from this folder due to large file size.
